@@ -1,0 +1,9 @@
+[package]
+name = "alien_cake_v2"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = "0.18.0"
+rand = "0.10.0"
+rand_chacha = "0.10.0"
