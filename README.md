@@ -4,8 +4,7 @@ A small 3D game built with [Bevy 0.18](https://bevyengine.org/), extended and re
 
 ## What was added
 
-The original example is intentionally minimal — a bare game loop with no sound, no effects, and a monolithic `Game` resource holding most of the state. 
-This version is refactored toward stricter ECS conventions and extended with additional features:
+The original example is an intentionally minimal game with no sound, no effects, and a monolithic `Game` resource holding most of the state.
 
 - **Missiles** — projectiles that fly across the board and trigger game over on contact
 - **Sound** — background music and a game over sound
