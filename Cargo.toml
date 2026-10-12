@@ -2,8 +2,21 @@
 name = "alien_cake_v2"
 version = "0.1.0"
 edition = "2024"
+license = "MIT OR Apache-2.0"
 
 [dependencies]
 bevy = "0.18.0"
 rand = "0.10.0"
 rand_chacha = "0.10.0"
+
+# Bevy systems declare their dependencies as parameters, so long and nested signatures are normal
+[lints.clippy]
+too_many_arguments = "allow"
+type_complexity = "allow"
+
+# Bevy runs very slowly unoptimized: lightly optimize our code and fully optimize dependencies in dev builds
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
