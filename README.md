@@ -23,3 +23,22 @@ The original example is an intentionally minimal game with no sound, no effects,
 ```bash
 cargo run --release
 ```
+
+## Development
+
+```bash
+cargo test
+cargo clippy --all-targets -- -D warnings
+cargo fmt --check
+```
+
+CI runs the same checks on every push to `main` and on pull requests.
+
+## License
+
+The code is licensed under either of
+
+- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE))
+- MIT license ([LICENSE-MIT](LICENSE-MIT))
+
+at your option. See [CREDITS.md](CREDITS.md) for asset credits and licenses.
