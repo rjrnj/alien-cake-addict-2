@@ -74,7 +74,7 @@ fn spawn_board(mut commands: Commands, mut rng: ResMut<Random>, scenes: Res<Scen
         DespawnOnExit(GameState::Playing),
         PointLight {
             intensity: MAIN_LIGHT_INTENSITY,
-            shadows_enabled: true,
+            shadow_maps_enabled: true,
             range: 30.0,
             ..default()
         },
@@ -87,7 +87,7 @@ fn spawn_board(mut commands: Commands, mut rng: ResMut<Random>, scenes: Res<Scen
             commands.spawn((
                 DespawnOnExit(GameState::Playing),
                 Transform::from_xyz(i as f32, board.height(i, j) - 0.2, j as f32),
-                SceneRoot(scenes.tile.clone()),
+                WorldAssetRoot(scenes.tile.clone()),
             ));
         }
     }

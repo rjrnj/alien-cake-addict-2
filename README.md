@@ -1,6 +1,6 @@
 # Alien Cake Addict (Extended)
 
-A small 3D game built with [Bevy 0.18](https://bevyengine.org/), extended and refactored from the official Bevy `alien_cake_addict` example.
+A small 3D game built with [Bevy 0.20](https://bevyengine.org/), extended and refactored from the official Bevy `alien_cake_addict` example.
 
 ## What was added
 

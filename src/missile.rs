@@ -54,7 +54,7 @@ fn spawn_missile(
         let missile_z = rng.random_range(0.0..BOARD_SIZE_J as f32);
         commands.spawn((
             DespawnOnExit(GameState::Playing),
-            SceneRoot(scenes.missile.clone()),
+            WorldAssetRoot(scenes.missile.clone()),
             Transform {
                 translation: Vec3::new(BOARD_SIZE_I as f32, MISSILE_HEIGHT, missile_z),
                 rotation: Quat::from_rotation_x(PI / 2.) * Quat::from_rotation_z(PI / 2.),

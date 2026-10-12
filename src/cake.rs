@@ -153,7 +153,7 @@ fn spawn_bonus(
             board.height(bonus_i, bonus_j) + BONUS_HOVER_HEIGHT,
             bonus_j as f32,
         ),
-        SceneRoot(scenes.bonus.clone()),
+        WorldAssetRoot(scenes.bonus.clone()),
         children![(
             PointLight {
                 color: Color::srgb(1.0, 1.0, 0.0),

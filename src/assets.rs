@@ -16,10 +16,10 @@ impl Plugin for AssetsPlugin {
 // which Bevy runs before `Startup`; every round reuses them.
 #[derive(Resource)]
 pub struct Scenes {
-    pub tile: Handle<Scene>,
-    pub player: Handle<Scene>,
-    pub bonus: Handle<Scene>,
-    pub missile: Handle<Scene>,
+    pub tile: Handle<WorldAsset>,
+    pub player: Handle<WorldAsset>,
+    pub bonus: Handle<WorldAsset>,
+    pub missile: Handle<WorldAsset>,
 }
 
 #[derive(Resource)]

@@ -46,7 +46,7 @@ fn spawn_player(mut commands: Commands, scenes: Res<Scenes>, board: Res<Board>) 
             rotation: Quat::from_rotation_y(-PI / 2.),
             ..default()
         },
-        SceneRoot(scenes.player.clone()),
+        WorldAssetRoot(scenes.player.clone()),
         PlayerMoveCooldown(Timer::from_seconds(
             PLAYER_MOVE_COOLDOWN_SECONDS,
             TimerMode::Once,
